@@ -1,0 +1,1 @@
+This expanded package includes example code and placeholder scripts. Review and secure before deploying to AWS.

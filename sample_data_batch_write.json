@@ -1,0 +1,58 @@
+{
+  "HotelRooms": [
+    {
+      "PutRequest": {
+        "Item": {
+          "roomType": {
+            "S": "Standard"
+          },
+          "price": {
+            "N": "50"
+          },
+          "available": {
+            "N": "10"
+          },
+          "amenities": {
+            "S": "wifi,tv"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "roomType": {
+            "S": "Deluxe"
+          },
+          "price": {
+            "N": "90"
+          },
+          "available": {
+            "N": "5"
+          },
+          "amenities": {
+            "S": "wifi,tv,minibar"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "roomType": {
+            "S": "Suite"
+          },
+          "price": {
+            "N": "150"
+          },
+          "available": {
+            "N": "2"
+          },
+          "amenities": {
+            "S": "wifi,tv,minibar,sea_view"
+          }
+        }
+      }
+    }
+  ]
+}

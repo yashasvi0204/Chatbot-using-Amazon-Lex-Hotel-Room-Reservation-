@@ -1,0 +1,6 @@
+{
+  "TableName": "HotelRooms",
+  "KeySchema": [{"AttributeName": "roomType", "KeyType": "HASH"}],
+  "AttributeDefinitions": [{"AttributeName": "roomType", "AttributeType": "S"}],
+  "ProvisionedThroughput": {"ReadCapacityUnits": 5, "WriteCapacityUnits": 5}
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "roomType": "Standard",
+    "price": 50,
+    "available": 10,
+    "amenities": [
+      "wifi",
+      "tv"
+    ]
+  },
+  {
+    "roomType": "Deluxe",
+    "price": 90,
+    "available": 5,
+    "amenities": [
+      "wifi",
+      "tv",
+      "minibar"
+    ]
+  },
+  {
+    "roomType": "Suite",
+    "price": 150,
+    "available": 2,
+    "amenities": [
+      "wifi",
+      "tv",
+      "minibar",
+      "sea_view"
+    ]
+  }
+]

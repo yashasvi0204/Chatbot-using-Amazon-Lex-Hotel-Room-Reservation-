@@ -1,0 +1,37 @@
+        <!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Hotel Reservation Chatbot Demo</title>
+</head>
+<body>
+  <h2>Hotel Reservation Chatbot Demo (Frontend)</h2>
+  <p>This demo uses placeholders — you must configure Cognito identity and Lex bot details.</p>
+  <div>
+    <label>Message: <input id="msg" /></label>
+    <button id="send">Send</button>
+  </div>
+  <pre id="log"></pre>
+
+  <script>
+    // This is a placeholder. In production you would: 
+    // 1) Configure AWS Cognito IdentityPool and get temporary credentials.
+    // 2) Use AWS SDK to call Lex RuntimeV2: `lexruntimev2.recognizeText`.
+    // 3) Render responses here.
+
+    const log = document.getElementById('log');
+    document.getElementById('send').addEventListener('click', () => {
+      const m = document.getElementById('msg').value;
+      // Simulated response for demo purposes
+      log.textContent += '\nYou: ' + m;
+      if (m.toLowerCase().includes('book')) {
+        log.textContent += '\nBot: Sure — what room type do you want?';
+      } else if (m.toLowerCase().includes('deluxe')) {
+        log.textContent += '\nBot: Deluxe room available. Nights?';
+      } else {
+        log.textContent += '\nBot: Sorry, I am a demo. Configure AWS to test live.';
+      }
+    });
+  </script>
+</body>
+</html>
